@@ -31,7 +31,7 @@ class Generator(nn.Module):
 device = torch.device("cpu")
 model = Generator()
 model.load_state_dict(torch.load(
-    "/Users/mac/Desktop/challenge/digit/generator_improved.pth", map_location=device))
+    "generator_improved.pth", map_location=device))
 
 model.eval()
 
